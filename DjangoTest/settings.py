@@ -52,6 +52,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+MIDDLEWARE_CLASSES = (
+    'api.snippets.EnforceLoginMiddleware',
+)
+
 ROOT_URLCONF = 'DjangoTest.urls'
 
 TEMPLATES = [
